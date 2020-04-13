@@ -3,7 +3,7 @@
 #
 # urls_to_check = [
 #     {
-#         'channel': 'https://github.com/someuser/first-repo',
+#         'channel': 'https://hooks.slack.com/services/first-hook',
 #         'urls': [
 #             'https://example.com/',
 #             'https://example.com/url-one/',
@@ -11,7 +11,7 @@
 #         ]
 #     },
 #     {
-#         'channel': 'https://github.com/otheruser/second-repo',
+#         'channel': 'https://hooks.slack.com/services/second-hook',
 #         'urls': [
 #             'https://other.com/',
 #             'https://other.com/url-one/'
@@ -19,7 +19,7 @@
 #     },
 #     ...
 # ]
-#
+
 
 urls_to_check = [
     {
