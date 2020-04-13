@@ -27,13 +27,13 @@ class Url:
             
     @property
     def domain_url(self):
-        return Url('{}://{}'.format(self.method, self.domain))
+        return Url(f'{self.method}://{self.domain}')
         
     def __str__(self):
-        return '{}://{}{}'.format(self.method, self.domain, self.path)
+        return f'{self.method}://{self.domain}{self.path}'
             
     def __repr__(self):
-        return '<Url method:{} domain:{} path:{}>'.format(self.method, self.domain, self.path)
+        return f'<Url method:{self.method} domain:{self.domain} path:{self.path}>'
         
     def response_status(self):
         response = requests.get(self.__str__())

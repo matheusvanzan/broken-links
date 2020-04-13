@@ -1,5 +1,7 @@
+import json
+import requests
+
 from data import *
-from github import Github
 from url import Url
 
 
@@ -9,17 +11,19 @@ for url_to_check in urls_to_check:
         print(url)
 
         for j, child in enumerate( Url(url).get_children() ):
-            print('{}.{} - Checking {}'.format(i+1, j+1, child))
+            print(f'{i}.{j} - Checking {child}')
             
             if child.response_status() != 200 or j==3:
-                
-                Github.create_issue(
-                    repository = url_to_check['repository'],
-                    title = 'Broken link: {}'.format(child),
                     
-                    body = \
-                        'You have a broken link at {}\n'.format(url) + \
-                        '- Link: {}\n'.format(child) + \
-                        '\n\n' + \
-                        'This issue was automatically created by [broken-links-monitor](https://github.com/matheusvanzan/broken-links-monitor)'
+                body = \
+                    f'You have a broken link at {url}\n' + \
+                    f'- Link: {child}\n' + \
+                    '\n\n' + \
+                    'This message was automatically created by <https://github.com/matheusvanzan/broken-links-monitor|broken-links-monitor>'
+                
+                response = requests.post(
+                    url_to_check['channel'], 
+                    json.dumps({ 'text': body })
                 )
+                    
+                print(response)

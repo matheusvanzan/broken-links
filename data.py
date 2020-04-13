@@ -1,9 +1,9 @@
 #
-# Write your urls here in the followinf format:
+# Write your urls here in the following format:
 #
 # urls_to_check = [
 #     {
-#         'repository': 'https://github.com/someuser/first-repo',
+#         'channel': 'https://github.com/someuser/first-repo',
 #         'urls': [
 #             'https://example.com/',
 #             'https://example.com/url-one/',
@@ -11,7 +11,7 @@
 #         ]
 #     },
 #     {
-#         'repository': 'https://github.com/otheruser/second-repo',
+#         'channel': 'https://github.com/otheruser/second-repo',
 #         'urls': [
 #             'https://other.com/',
 #             'https://other.com/url-one/'
@@ -23,7 +23,7 @@
 
 urls_to_check = [
     {
-        'repository': 'https://github.com/matheusvanzan/broken-links-monitor',
+        'channel': 'https://hooks.slack.com/services/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',
         'urls': [
             'https://umcodigo.com/',
             'https://umcodigo.com/cloud9-porque-usar-uma-cloud-ide/',
