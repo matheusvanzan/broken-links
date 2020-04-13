@@ -16,7 +16,7 @@ The urls can be configured in `data.py` file.
 ```python
 urls_to_check = [
     {
-        'repository': 'https://github.com/someuser/first-repo',
+        'channel': 'https://hooks.slack.com/services/first-hook',
         'urls': [
             'https://example.com/',
             'https://example.com/url-one/',
@@ -24,7 +24,7 @@ urls_to_check = [
         ]
     },
     {
-        'repository': 'https://github.com/otheruser/second-repo',
+        'channel': 'https://hooks.slack.com/services/second-hook',
         'urls': [
             'https://other.com/',
             'https://other.com/url-one/'
@@ -34,21 +34,11 @@ urls_to_check = [
 ]
 ```
 
-## Configuring Github issue
+## Configuring Slack issue
 
-Fisrt, get an [API token](https://github.com/settings/tokens) from github.
+Cretate an incoming webhook on Slack [here](https://brokenlinksworkspace.slack.com/apps/A0F7XDUAZ-webhooks-de-entrada?next_id=0)
 
-Set the `GITHUB_TOKEN` environment variable to your token as the `Github` class 
-has class variables you must provide
-
-```python
-class Github:
-    
-    username = 'your_github_username'
-    token = os.environ['GITHUB_TOKEN']
-    
-    ...
-```
+Just get the provided Url and put in `data.py`
 
 ## Crontab config
 
