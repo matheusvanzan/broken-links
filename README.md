@@ -49,3 +49,5 @@ every day at 6 a.m.
 # m h dom mon dow command
 0 6 * * * /path/to/virtualenv/bin/python main.py
 ```
+
+## Further insctructions can be foun in Portuguese-Br [here](https://umcodigo.com/como-monitorar-links-quebrados-em-suas-paginas-com-python)
