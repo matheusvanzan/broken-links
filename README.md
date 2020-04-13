@@ -38,7 +38,7 @@ urls_to_check = [
 
 Cretate an incoming webhook on Slack [here](https://brokenlinksworkspace.slack.com/apps/A0F7XDUAZ-webhooks-de-entrada?next_id=0)
 
-Just get the provided Url and put in `data.py`
+Just get the provided Url and put in [data.py](https://github.com/matheusvanzan/broken-links-monitor/blob/master/data.py)
 
 ## Crontab config
 
