@@ -3,7 +3,7 @@
 This project parses a website to find broken links. If one is found it creates
 an issue at specified github repository.
 
-> Further insctructions can be foun in Portuguese-Br [here](https://umcodigo.com/como-monitorar-links-quebrados-em-suas-paginas-com-python)
+> Further instructions can be found in Portuguese-BR [here](https://umcodigo.com/como-monitorar-links-quebrados-em-suas-paginas-com-python)
 
 ## Install
 
